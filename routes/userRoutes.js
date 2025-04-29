@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 
-// All routes here:
 router.post('/create-user', userController.createUser);
 router.get('/read-user', userController.readUser);
 router.put('/update-user', userController.updateUser);
